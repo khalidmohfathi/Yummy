@@ -1,0 +1,243 @@
+body {
+   background-color: black;
+   overflow: hidden;
+}
+#loading {
+   background-color: black;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 500;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sk-circle {
+   margin: 100px auto;
+   width: 80px;
+   height: 80px;
+   position: relative;
+}
+.sk-circle .sk-child {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+.sk-circle .sk-child:before {
+   content: '';
+   display: block;
+   margin: 0 auto;
+   width: 15%;
+   height: 15%;
+   background-color: #fff;
+   border-radius: 100%;
+   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+.sk-circle .sk-circle2 {
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+   transform: rotate(30deg);
+}
+.sk-circle .sk-circle3 {
+   -webkit-transform: rotate(60deg);
+   -ms-transform: rotate(60deg);
+   transform: rotate(60deg);
+}
+.sk-circle .sk-circle4 {
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   transform: rotate(90deg);
+}
+.sk-circle .sk-circle5 {
+   -webkit-transform: rotate(120deg);
+   -ms-transform: rotate(120deg);
+   transform: rotate(120deg);
+}
+.sk-circle .sk-circle6 {
+   -webkit-transform: rotate(150deg);
+   -ms-transform: rotate(150deg);
+   transform: rotate(150deg);
+}
+.sk-circle .sk-circle7 {
+   -webkit-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
+.sk-circle .sk-circle8 {
+   -webkit-transform: rotate(210deg);
+   -ms-transform: rotate(210deg);
+   transform: rotate(210deg);
+}
+.sk-circle .sk-circle9 {
+   -webkit-transform: rotate(240deg);
+   -ms-transform: rotate(240deg);
+   transform: rotate(240deg);
+}
+.sk-circle .sk-circle10 {
+   -webkit-transform: rotate(270deg);
+   -ms-transform: rotate(270deg);
+   transform: rotate(270deg);
+}
+.sk-circle .sk-circle11 {
+   -webkit-transform: rotate(300deg);
+   -ms-transform: rotate(300deg);
+   transform: rotate(300deg);
+}
+.sk-circle .sk-circle12 {
+   -webkit-transform: rotate(330deg);
+   -ms-transform: rotate(330deg);
+   transform: rotate(330deg);
+}
+.sk-circle .sk-circle2:before {
+   -webkit-animation-delay: -1.1s;
+   animation-delay: -1.1s;
+}
+.sk-circle .sk-circle3:before {
+   -webkit-animation-delay: -1s;
+   animation-delay: -1s;
+}
+.sk-circle .sk-circle4:before {
+   -webkit-animation-delay: -0.9s;
+   animation-delay: -0.9s;
+}
+.sk-circle .sk-circle5:before {
+   -webkit-animation-delay: -0.8s;
+   animation-delay: -0.8s;
+}
+.sk-circle .sk-circle6:before {
+   -webkit-animation-delay: -0.7s;
+   animation-delay: -0.7s;
+}
+.sk-circle .sk-circle7:before {
+   -webkit-animation-delay: -0.6s;
+   animation-delay: -0.6s;
+}
+.sk-circle .sk-circle8:before {
+   -webkit-animation-delay: -0.5s;
+   animation-delay: -0.5s;
+}
+.sk-circle .sk-circle9:before {
+   -webkit-animation-delay: -0.4s;
+   animation-delay: -0.4s;
+}
+.sk-circle .sk-circle10:before {
+   -webkit-animation-delay: -0.3s;
+   animation-delay: -0.3s;
+}
+.sk-circle .sk-circle11:before {
+   -webkit-animation-delay: -0.2s;
+   animation-delay: -0.2s;
+}
+.sk-circle .sk-circle12:before {
+   -webkit-animation-delay: -0.1s;
+   animation-delay: -0.1s;
+}
+@-webkit-keyframes sk-circleBounceDelay {
+   0%,
+   80%,
+   100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+   }
+   40% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+   }
+}
+@keyframes sk-circleBounceDelay {
+   0%,
+   80%,
+   100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+   }
+   40% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+   }
+}
+.cursor{
+   cursor:pointer;
+}
+i{
+   cursor: pointer;
+}
+li{
+   list-style: none;
+   margin-top: 1rem;
+   position: relative;
+   top: 400px;
+   cursor: pointer;
+}
+
+#side{
+   position: fixed;
+   height: 100%;
+   z-index: 200;
+}
+#sidebar{
+   height: 100%;
+   width: 4.2rem;
+}
+#sidelist{
+   height: 100%;
+   width: 16rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: absolute;
+   left: -16rem;
+}
+.overlay{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: rgba(245, 245, 245, 0.7);
+   height: 100%;
+   width: 100%;
+   top: 100%;
+   transition: 0.6s ease-in-out;
+}
+.outline{
+   overflow: hidden;
+   position: relative;
+}
+.outline:hover .overlay{
+   top: 0;
+}
+input{
+   background-color: black !important;
+   color: #fff !important;
+}
+input::placeholder{
+   color: gray !important;
+}
+#search_area{
+   position: relative;
+   z-index: 150;
+}
+.detail-cross{
+   position: absolute;
+   color: red !important;
+   top: 3%;
+   right: 3%;
+}
+#detail{
+   position: absolute;
+   width: calc(100% - 4.2rem);
+   height: 100%;
+   margin: auto;
+   right: 0;
+   overflow-y: scroll;
+}
+
+.contact input{
+   color: black !important;
+   background-color: white !important;
+}
+
